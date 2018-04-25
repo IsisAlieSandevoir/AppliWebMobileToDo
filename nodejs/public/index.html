@@ -1,0 +1,36 @@
+<!-- 
+    Index .html est la page principale, 
+    elle contient tous les script (liens vers les autres pages)
+    ainsi que le corpsde la page
+-->
+<!DOCTYPE html>
+<html lang="fr" ng-app="routeApp">
+    <head>
+        <meta charset="utf-8" />
+        <title>Route App</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/Controller/page1Ctrl.js"></script>
+        <script src="js/reste/hello.js"></script>
+        <script src="js/ComputerService.js"></script>
+        <script src="js/ToDoService.js"></script>
+        <script src="js/Controller/page3Ctrl.js"></script>
+        <script src="js/Controller/page4Ctrl.js"></script>
+        <script src="js/Controller/page5Ctrl.js"></script>
+        <script src="js/Controller/ToDoCtrl.js"></script>
+    </head>
+
+    <body>
+        <a ui-sref="home" ui-sref-active="active">Accueil</a>
+        <a ui-sref="page1" ui-sref-active="active">Page 1</a>
+        <a ui-sref="page2" ui-sref-active="active">Page 2</a>
+        <a ui-sref="page3" ui-sref-active="active">Page 3</a>
+        <a ui-sref="page4" ui-sref-active="active">Page 4</a>
+        <a ui-sref="page5" ui-sref-active="active">Page 5</a>
+        <a ui-sref="pageHello" ui-sref-active="active">Page Hello</a>
+        <a ui-sref="ToDo" ui-sref-active="active">ToDo</a>
+        <ui-view></ui-view>
+    </body>
+</html>
